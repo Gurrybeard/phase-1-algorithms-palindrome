@@ -1,9 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let splitString = word.split("");
+ let reversedAr = splitString.reverse();
+ let final = reversedAr.join("");
+ if(word === final){
+   return true
+ }
+ else{
+   return false
+ }
 }
 
 /* 
   Add your pseudocode here
+  possible solution: takes the string
+  makes a var and = it to a reversed version of the string by making each character an array item and then joining them together
+  checks to see if they are the same and returns true or false
 */
 
 /*
